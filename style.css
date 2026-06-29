@@ -325,7 +325,7 @@ h3 { font-size: clamp(1.3rem, 3vw, 2rem); }
 .modes { background: #f5f5ef; padding: 4rem 5%; }
 .modes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
@@ -397,7 +397,7 @@ h3 { font-size: clamp(1.3rem, 3vw, 2rem); }
 .reviews .section-sub { color: #aaa; }
 .reviews-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 1.5rem;
   margin-top: 2.5rem;
 }
@@ -742,6 +742,22 @@ footer {
 }
 
 /* Mobiles*/
+@media (max-width: 768px) {
+  .section-content .container {
+    display: block;
+  }
+  .obj-grid {
+    grid-template-columns: 1fr;
+  }
+  .objectives .container {
+    display: block;
+  }
+  .cta-banner {
+    width: 100%;
+    position: static;
+  }
+}
+
 @media (max-width: 680px) {
   /* Navbar burger */
   .nav-links {
@@ -810,6 +826,8 @@ footer {
 
   /* Créateurs */
   .creators { padding: 3rem 5%; }
+  .creator-card { grid-template-columns: 1fr; }
+  .creator-card-reverse { direction: ltr; }
   .creator-info { padding: 1.8rem; }
   .creator-info h2 { font-size: 1.6rem; }
 
@@ -821,6 +839,7 @@ footer {
 
   /* Contact */
   .contact-section { padding: 3rem 5%; }
+  .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
   .contact-form { padding: 1.8rem; }
 
   /* Page hero */
@@ -850,3 +869,4 @@ footer {
   .testers-names { padding: 1rem; }
   .hero { min-height: 70vh; }
 }
+
