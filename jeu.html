@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Le Jeu </title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=crop/AE0o1e5Qk3H9oJjp/4-roozers-copie-Y4LPp20503uBz2gO.png" alt="Logo ROOZERS" />
+    </a>
+    <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="jeu.html" class="active">Le jeu</a></li>
+      <li><a href="createurs.html">Les créateurs</a></li>
+      <li><a href="projets.html">Nos projets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="regles.html" class="btn-rules">Règles complètes</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero" style="background-image: url('https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/AE0o1e5Qk3H9oJjp/vue_decor_principal-mjEqy8JVJNtN57bw.png')">
+    <div class="page-hero-overlay">
+      <h1 class="reveal">Le Jeu</h1>
+    </div>
+
+  </section>
+  <section class="section-content">
+    <div class="container">
+      <p class="lead reveal"><strong>ROOZERS</strong>, c'est une succession de salles inquiétantes dans lesquelles ont été enfermés vos amis — mais surtout ces salles contiennent un grand danger… <strong>LES PROFS !</strong></p>
+      <p class="reveal delay1">Évitez-les si vous ne voulez pas que vos points dégringolent comme à la suite d'une interro surprise.</p>
+      <p class="reveal delay2"><strong>ROOZERS</strong> est un jeu de carte qui comporte plusieurs modes de jeux :</p>
+    </div>
+  </section>
+
+
+  <section class="modes">
+    <div class="container">
+      <div class="modes-grid">
+        <div class="mode-card mode-cancre reveal">
+          <div class="mode-badge">MODE 1</div>
+          <h3>CANCRE</h3>
+          <p>Il faut bien commencer quelque part ! C'est la version la plus simple, avec un gameplay simplifié pour bien prendre en main les mécaniques du jeu.</p>
+          <div class="difficulty"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+        </div>
+        <div class="mode-card mode-eleve reveal delay1">
+          <div class="mode-badge popular">LE + JOUÉ</div>
+          <h3>BON ÉLÈVE</h3>
+          <p>C'est le jeu de base avec toutes les cartes en action. La version complète et équilibrée pour des soirées mémorables.</p>
+          <div class="difficulty"><span class="dot active"></span><span class="dot active"></span><span class="dot"></span></div>
+        </div>
+        <div class="mode-card mode-genie reveal delay2">
+          <div class="mode-badge">MODE 3</div>
+          <h3>GÉNIE</h3>
+          <p>Toutes les cartes en action combinées avec <strong>LE BLUFF</strong>. Non réservé aux stratèges, mais à ceux qui ont déjà plusieurs parties au compteur !</p>
+          <div class="difficulty"><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="objectives">
+    <div class="container">
+      <h2 class="section-title reveal">Pour remporter la partie, il vous faudra :</h2>
+      <div class="obj-grid">
+        <div class="obj-card reveal">
+          <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=791,fit=crop/AE0o1e5Qk3H9oJjp/1_exploration-copie-AR0M946QJpiGEyOY.png" alt="Exploration" loading="lazy" />
+          <h4>Explorer</h4>
+        </div>
+        <div class="obj-card reveal delay1">
+          <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=791,fit=crop/AE0o1e5Qk3H9oJjp/2_recolte-copie-AE0aeXBVgwHkLBMK.png" alt="Récolte" loading="lazy" />
+          <h4>Récolter</h4>
+        </div>
+        <div class="obj-card reveal delay2">
+          <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=791,fit=crop/AE0o1e5Qk3H9oJjp/3_delivrez-copie-A3QONK0K5zhD2r1g.png" alt="Délivrez" loading="lazy" />
+          <h4>Délivrer</h4>
+        </div>
+        <div class="obj-card reveal delay3">
+          <img src="" alt="Embêtez" loading="lazy" />
+          <h4>Embêter</h4>
+        </div>
+      </div>
+      <div class="cta-banner reveal">
+        <p>Et si avec tout ça, vous n'arrivez pas à vous amuser, c'est que vous n'êtes pas un vrai <strong>ROOZER !!</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="container">
+      <h2 class="section-title reveal">Avis de joueurs</h2>
+      <p class="section-sub reveal">Découvrez les retours des testeurs !</p>
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>"Un jeu de cartes aux règles simples qui allie bluff, mémoire, et coups tordus. Idéal en famille avec des ados."</p>
+          <cite>Sophie M. — Testeuse, Valence</cite>
+        </div>
+        <div class="review-card reveal delay1">
+          <div class="stars">★★★★★</div>
+          <p>"Énorme plaisir que ce petit jeu de carte qui se laisse facilement apprivoiser et qui dévoile de parties en parties des finesses stratégiques. Addictif !"</p>
+          <cite>Antoine B. — Testeur, Bordeaux</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testers">
+    <div class="container">
+      <h2 class="section-title reveal">Elles et ils ont testé ROOZERS !</h2>
+      <p class="reveal delay1">Elles et ils ont traqué les erreurs, les incohérences, les longueurs, ont accumulé les parties avec le sourire. Un grand merci !</p>
+      <div class="testers-names reveal delay2">
+        Pascal, Raphaël, Simon, Basile, Robin, Eyrine, Catherine, Anne, Louise, Julianne, Nawri, Mahira, Manon, Lilian, Quentin, Suzanne, Aurélie, Agathe, Lou-Ann, Lucie, Marie, Alexia, Thibaut, Peïo, Antoine, Elise, Amélie, Clémence, Maxime, Noé, Pierre, Fanny, Pauline, Léna, Sophie, Damien, Lenny, Chloé, Lili, Milan.
+      </div>
+      <p class="testers-note reveal delay3"><em>Si on a oublié quelqu'un, appelez-nous, on vous rajoutera sur la liste !</em></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=crop/AE0o1e5Qk3H9oJjp/4-roozers-copie-Y4LPp20503uBz2gO.png" alt="Logo ROOZERS" />
+        <p>Un jeu familial d'action et de bluff.</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Roozers LIGNE DIRECTE</h4>
+        <p><a href="mailto:pascalbonnardesign@gmail.com">pascalbonnardesign@gmail.com</a></p>
+        <p><a href="tel:+33674789199">+33 06 74 78 91 99</a></p>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Restez informé !</h4>
+        <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+          <input type="email" placeholder="Votre adresse e-mail" required />
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 ROOZERS. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

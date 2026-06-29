@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Les Créateurs – ROOZERS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="img/Roozer_front.jpg" alt="Logo ROOZERS" />
+    </a>
+    <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="jeu.html">Le jeu</a></li>
+      <li><a href="createurs.html" class="active">Les créateurs</a></li>
+      <li><a href="projets.html">Nos projets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="regles.html" class="btn-rules">Règles complètes</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero page-hero-dark">
+    <div class="page-hero-overlay">
+      <h1 class="reveal">Les Créateurs</h1>
+      <p class="reveal delay1">Le fruit d'une collaboration entre deux amoureux des jeux de société et des jeux vidéos.</p>
+    </div>
+  </section>
+
+  <section class="creators">
+    <div class="container">
+
+      <div class="creator-card reveal">
+        <div class="creator-img">
+          <img src="img/BONNARDP.jpg" alt="Pascal Bonnard" loading="lazy" />
+        </div>
+        <div class="creator-info">
+          <span class="creator-tag">Graphisme & Univers</span>
+          <h2>Pascal Bonnard</h2>
+          <p>Graphiste, illustrateur et enseignant. L'univers décalé de Roozers ? C'est lui ! Originaire de la Drôme, il part habiter Bordeaux pendant 25 ans avant de revenir au pied du Vercors.</p>
+          <p>Pascal est inscrit à la <strong>Maison des Artistes</strong> et adhérent à la <strong>SAJ</strong>.</p>
+        </div>
+      </div>
+
+      <div class="creator-card creator-card-reverse reveal">
+        <div class="creator-img">
+          <img src="img/MELCHIORR.jpg" alt="Raphael Melchior" loading="lazy" />
+        </div>
+        <div class="creator-info">
+          <span class="creator-tag">Mécanique & Game Design</span>
+          <h2>Raphael Melchior</h2>
+          <p>Gestionnaire de structures associative au Bouscat en Gironde. Calculs, probabilités et équilibre. Le cœur mécanique et le moteur du jeu, c'est lui !</p>
+        </div>
+      </div>
+
+      <div class="creator-card reveal">
+        <div class="creator-img">
+          <img src="img/MILLETA.jpg" alt="Agathe Millet - Typographie" loading="lazy" />
+        </div>
+        <div class="creator-info">
+          <span class="creator-tag">Typographie</span>
+          <h2>Agathe Millet</h2>
+          <p>Graphiste et designer indépendante résidente à Montpellier, c'est elle qui a dessiné patiemment toutes les lettres et les chiffres du jeu.</p>
+          <p>Le nom de sa typographie ? <strong>Karnage !</strong> Tout un programme !</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="thanks">
+    <div class="container">
+      <h2 class="section-title reveal">Un spécial <span class="highlight">THANKS !</span></h2>
+      <p class="reveal delay1">Elle a participé avec une implication et une disponibilité immense. <strong>BIG UP</strong> à une collaboratrice en or.</p>
+
+      <div class="creator-card reveal delay2">
+        <div class="creator-img">
+          <img src="img/TESTUC.jpg" alt="Chloé Testu" loading="lazy" />
+        </div>
+        <div class="creator-info">
+          <span class="creator-tag">Illustration</span>
+          <h2>Chloé Testu</h2>
+          <p>Étudiante à l'École Condé de Bordeaux, elle a été d'une grande aide pour la mise au trait et la colorisation des ROOZERS.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="img/logo_Roozer.jpg" alt="Logo ROOZERS" />
+        <p>Un jeu familial d'action et de bluff.</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Roozers LIGNE DIRECTE </h4>
+        <p><a href="mailto:pascalbonnardesign@gmail.com">pascalbonnardesign@gmail.com</a></p>
+        <p><a href="tel:+33674789199">+33 06 74 78 91 99</a></p>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Restez informé !</h4>
+        <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+          <input type="email" placeholder="Votre adresse e-mail" required />
+          <button type="submit">Envoyer →</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 ROOZERS. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

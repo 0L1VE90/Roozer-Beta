@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact – ROOZERS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+    <img src="img/Roozer_front.jpg" alt="Logo ROOZERS" />
+    </a>
+    <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="jeu.html">Le jeu</a></li>
+      <li><a href="createurs.html">Les créateurs</a></li>
+      <li><a href="projets.html">Nos projets</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="regles.html" class="btn-rules">Règles complètes</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero page-hero-dark">
+    <div class="page-hero-overlay">
+      <h1 class="reveal">Contact</h1>
+      <p class="reveal delay1">Une question ? Une envie de jouer ? Écrivez-nous !</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <h2>On aime les <span class="highlight">vrais échanges</span> !</h2>
+        <p>Que vous soyez curieux, testeur potentiel, distributeur ou simplement un fan, n'hésitez pas à nous contacter.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <span class="ci-icon"></span>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:pascalbonnardesign@gmail.com">pascalbonnardesign@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon"></span>
+            <div>
+              <strong>Téléphone</strong>
+              <a href="tel:+33674789199">+33 06 74 78 91 99</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal delay1" onsubmit="handleContact(event)">
+        <div class="form-group">
+          <label for="name">Nom *</label>
+          <input type="text" id="name" placeholder="Votre nom" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" placeholder="votre@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Sujet</label>
+          <input type="text" id="subject" placeholder="De quoi souhaitez-vous parler ?" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" rows="6" placeholder="Votre message..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Envoyer le message →</button>
+        <p id="form-success" class="form-success" style="display:none">Message envoyé ! On vous répond vite.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="img/logo_Roozer.jpg" alt="Logo ROOZERS" />
+        <p>Un jeu familial d'action et de bluff.</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Roozers LIGNE DIRECTE</h4>
+        <p><a href="mailto:pascalbonnardesign@gmail.com">pascalbonnardesign@gmail.com</a></p>
+        <p><a href="tel:+33674789199">+33 06 74 78 91 99</a></p>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Restez informé !</h4>
+        <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+          <input type="email" placeholder="Votre adresse e-mail" required />
+          <button type="submit">Envoyer →</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 ROOZERS. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nos Projets</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+     <img src="img/Roozer_front.jpg" alt="Logo ROOZERS" />
+    </a>
+    <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="jeu.html">Le jeu</a></li>
+      <li><a href="createurs.html">Les créateurs</a></li>
+      <li><a href="projets.html" class="active">Nos projets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="regles.html" class="btn-rules">Règles complètes</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero page-hero-dark">
+    <div class="page-hero-overlay">
+      <h1 class="reveal">Nos Projets</h1>
+      <p class="reveal delay1">Ce qui nous anime et ce qui arrive bientôt.</p>
+    </div>
+  </section>
+
+  <section class="section-content">
+    <div class="container">
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-icon"></div>
+          <h3>ROOZERS V2</h3>
+          <p>Une extension et de nouvelles cartes pour enrichir encore l'expérience de jeu. Plus de salles, plus de profs, plus de chaos !</p>
+          <span class="project-status status-progress">En développement</span>
+        </div>
+        <div class="project-card reveal delay1">
+          <h3>Édition Tournoi</h3>
+          <p>Un format compétitif pour organiser des tournois entre amis, en famille ou en club. Classements, règles officielles, trophées.</p>
+          <span class="project-status status-idea">À l'étude</span>
+        </div>
+        <div class="project-card reveal delay2">
+          <h3>Application Compagnon</h3>
+          <p>Une app pour gérer les scores, expliquer les règles en temps réel, et suivre vos statistiques de jeu.</p>
+          <span class="project-status status-idea">À l'étude</span>
+        </div>
+        <div class="project-card reveal delay3">
+          <h3>Version internationale</h3>
+          <p>ROOZERS en anglais et en espagnol pour conquérir l'Europe des jeux de société !</p>
+          <span class="project-status status-idea">À l'étude</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="img/Roozer_front.jpg" alt="Logo ROOZERS" />
+        <p>Un jeu familial d'action et de bluff.</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Roozers LIGNE DIRECTE</h4>
+        <p><a href="mailto:pascalbonnardesign@gmail.com">pascalbonnardesign@gmail.com</a></p>
+        <p><a href="tel:+33674789199">+33 06 74 78 91 99</a></p>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Restez informé !</h4>
+        <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+          <input type="email" placeholder="Votre adresse e-mail" required />
+          <button type="submit">Envoyer →</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 ROOZERS. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
