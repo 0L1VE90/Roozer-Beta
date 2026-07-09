@@ -82,9 +82,9 @@ h3 { font-size: clamp(1.3rem, 3vw, 2rem); }
   gap: 1rem;
 }
 .nav-logo img {
-  height: 48px;
-  width: auto;
-  filter: brightness(0) invert(1);
+    height: 50px;       
+    width: auto;        
+    display: block;     
 }
 .nav-links {
   list-style: none;
